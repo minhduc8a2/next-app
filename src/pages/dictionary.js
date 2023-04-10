@@ -9,7 +9,7 @@ export default function dictionaryList({ data }) {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const res = await fetch(
     "https://dictionaryserver.onrender.com/api/dictionary"
   )
